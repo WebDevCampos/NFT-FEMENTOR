@@ -46,19 +46,20 @@ p {
   color: var(--soft-blue);
   font-weight: 300;
 }
-.value-and-time {
-  display: flex;
-  flex-flow: row;
+.value-and-time,
+.avatar-section {
   justify-content: space-between;
   align-items: center;
 }
-
+.value-and-time,
 .value,
-.time {
+.time,
+.avatar-section {
   display: flex;
   flex-flow: row;
   align-items: center;
 }
+
 .value img,
 .time img {
   margin: 0 0.5rem;
@@ -69,12 +70,6 @@ p {
 .time p {
   color: var(--soft-blue);
   font-weight: 300;
-}
-.avatar-section {
-  display: flex;
-  flex-flow: row;
-  justify-content: space-between;
-  align-items: center;
 }
 .avatar-section span {
   font-size: inherit;
