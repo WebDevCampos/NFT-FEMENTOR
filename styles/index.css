@@ -16,7 +16,7 @@ body {
 }
 main {
   max-width: clamp(32.5rem, 32.5rem + 3vw, 37.5rem);
-  margin: 2% auto 0;
+  margin: 1% auto 0;
   background: var(--card-bg);
   padding: 2rem;
   border-radius: 1rem;
@@ -28,27 +28,57 @@ main,
 img {
   border-radius: 1.5rem;
 }
-main div {
-  height: clamp(4rem, 4rem + 1vw, 5rem);
-  margin: 5rem 0 0;
-  display: flex;
-  flex-flow: column;
-  justify-content: space-between;
-}
-h1 {
-  font-size: clamp(2.5rem, 2.5rem + 1vw, 4rem);
-}
+
 p {
   font-size: clamp(1.3rem, 1.3rem + 1vw, 2.2rem);
   margin: 2rem 0;
 }
+.product,
+.value-and-time,
+.avatar-section {
+  margin: calc(2rem + 0.1vw) 0;
+}
+.product-name {
+  font-size: clamp(2.5rem, 2.5rem + 1vw, 4rem);
+}
+.product-description {
+  line-height: 1.3;
+  color: var(--soft-blue);
+  font-weight: 300;
+}
+.value-and-time {
+  display: flex;
+  flex-flow: row;
+  justify-content: space-between;
+  align-items: center;
+}
 
+.value,
+.time {
+  display: flex;
+  flex-flow: row;
+  align-items: center;
+}
+.value img,
+.time img {
+  margin: 0 0.5rem;
+}
+.value p {
+  color: var(--cyan);
+}
+.time p {
+  color: var(--soft-blue);
+  font-weight: 300;
+}
 .avatar-section {
   display: flex;
   flex-flow: row;
   justify-content: space-between;
   align-items: center;
-  margin: 5rem 0 0;
+}
+.avatar-section span {
+  font-size: inherit;
+  color: var(--soft-blue);
 }
 .creator-avatar {
   max-width: clamp(4.5rem, 4rem + 1vw, 100%);
