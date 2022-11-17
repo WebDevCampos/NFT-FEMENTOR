@@ -70,6 +70,9 @@ main .overlay-image {
 .product-name {
   font-size: clamp(2.5rem, 2.5rem + 1vw, 4rem);
 }
+.creator-name {
+  color: var(--white);
+}
 .product-name:hover,
 .creator-name:hover {
   color: var(--cyan);
