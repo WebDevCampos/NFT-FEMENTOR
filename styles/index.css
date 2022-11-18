@@ -118,7 +118,7 @@ hr {
   color: var(--soft-blue);
 }
 .creator-avatar {
-  max-width: clamp(3.5rem, 3.5rem + 1vw, 100%);
+  max-width: clamp(3rem, 2vw, 100%);
   margin-right: 2rem;
 }
 .creator-name {
